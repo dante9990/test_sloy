@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "GilgoyRegular";
+    src: url("../fonts/gilroy-regular.eot");
+    src: url("../fonts/gilroy-regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/gilroy-regular.woff") format("woff"), url("../fonts/gilroy-regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GilgoyBold";
+    src: url("../fonts/gilroy-bold.eot");
+    src: url("../fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/gilroy-bold.woff") format("woff"), url("../fonts/gilroy-regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    font-family: "GilgoyRegular";
+    margin: 0;
+    padding: 0;
+}
+
+.information {
+    margin: 0;
+    padding: 0;
+    margin-top: 273px;
+    background: #202020;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 1480px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.econom {
+    width: 1050px;
+    margin: 0 auto;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -273px;
+    z-index: 2;
+    background: linear-gradient(231.81deg, #2c2d84 34.42%, #3383bd 105.57%);
+}
+
+.econom::after {
+    position: absolute;
+    content: "";
+    width: 311px;
+    height: 380px;
+    background: url("/img/pig.png");
+    background-size: cover;
+    right: -60px;
+    top: 60px;
+}
+
+.econom__title {
+    font-family: "GilgoyBold";
+    padding: 0;
+    margin: 70px 230px 0 60px;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 79px;
+}
+
+.econom__text {
+    font-size: 18px;
+    line-height: 39px;
+    margin: 19px 309px 74px 60px;
+}
+
+.sbp {
+    width: 1175px;
+    margin-left: 120px;
+    margin-top: 109px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sbp__info {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 466px;
+    z-index: 2;
+}
+
+.sbp__title {
+    font-family: "GilgoyBold";
+    font-size: 144px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.sbp__subtitle-bold {
+    font-family: "GilgoyBold";
+    font-size: 72px;
+    line-height: 89px;
+    text-transform: uppercase;
+    margin-top: 110px;
+}
+
+.sbp__subtitle-regular {
+    font-size: 72px;
+    line-height: 89px;
+    text-transform: uppercase;
+}
+
+.sbp__img {
+    width: 709px;
+    height: 672px;
+    background: url("/img/sbp.png") no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    z-index: 2;
+    position: relative;
+}
+
+.sbp__img::after {
+    position: absolute;
+    content: "";
+    width: 190px;
+    height: 190px;
+    background: url("/img/doodle.png") no-repeat -160px -120px;
+    right: 0;
+    bottom: -250px;
+}
+
+.linear {
+    position: absolute;
+    width: 727px;
+    height: 727px;
+    background: linear-gradient(180deg, #d9602f 0%, #ca2400 100%);
+    filter: blur(200px);
+    border-radius: 567.5px;
+    margin-left: 350px;
+    margin-top: 200px;
+    z-index: 1;
+}
+
+.sbp__info-text {
+    z-index: 2;
+}
+
+.sbp__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 39px;
+    width: 614px;
+    margin-top: 70px;
+}
+
+.sbp__link {
+    margin-top: 23px;
+    font-size: 14px;
+    color: #ea5616;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+
+.sbp__link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #ea5616;
+    top: 8px;
+    right: -100px;
+}
+
+.sbp__link::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-right: 1px solid #ea5616;
+    border-bottom: 1px solid #ea5616;
+    transform: rotate(-45deg);
+    top: 5px;
+    right: -100px;
+}
+
+.sbp__link:hover::after,
+.sbp__link:hover::before {
+    transition: 0.2s;
+    right: -120px;
+}
+
+@media (max-width: 356px) {
+    .information {
+        margin-top: 167px;
+        padding-bottom: 100px;
+    }
+
+    .container {
+        width: 356px;
+    }
+
+    .econom {
+        width: 300px;
+        border-radius: 13px;
+        margin-top: -167px;
+    }
+
+    .econom::after {
+        width: 198px;
+        height: 243px;
+        right: 50px;
+        top: 460px;
+    }
+
+    .econom__title {
+        margin: 21px 96px 0 25px;
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .econom__text {
+        font-size: 14px;
+        line-height: 30px;
+        margin: 14px 4px 182px 25px;
+    }
+
+    .sbp {
+        width: 296px;
+        margin-left: 27px;
+        margin-top: 138px;
+    }
+
+    .sbp__info {
+        width: 231px;
+        order: 1;
+    }
+
+    .sbp__title {
+        font-size: 70px;
+    }
+
+    .sbp__subtitle-bold {
+        font-size: 36px;
+        line-height: 45px;
+        margin-top: 48px;
+    }
+
+    .sbp__subtitle-regular {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .sbp__img {
+        width: 310px;
+        height: 300px;
+        margin-top: 38px;
+        margin-left: -17px;
+        order: 3;
+    }
+
+    .sbp__img::after {
+        width: 100px;
+        height: 115px;
+        background: url("/img/doodle_mobile.png") no-repeat -100px -70px;
+        bottom: -60px;
+    }
+
+    .sbp__info-text {
+        order: 2;
+    }
+
+    .sbp__text {
+        width: 296px;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 31px;
+    }
+
+    .sbp__link {
+        font-size: 17px;
+        margin-top: 38px;
+    }
+
+    .sbp__link::before {
+        width: 54px;
+        right: -80px;
+    }
+
+    .sbp__link::after {
+        right: -80px;
+    }
+
+    .linear {
+        display: none;
+    }
+}
