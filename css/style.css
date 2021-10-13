@@ -57,7 +57,7 @@ body {
     content: "";
     width: 311px;
     height: 380px;
-    background: url("/img/pig.png");
+    background: url("./../img/pig.png");
     background-size: cover;
     right: -60px;
     top: 60px;
@@ -120,7 +120,7 @@ body {
 .sbp__img {
     width: 709px;
     height: 672px;
-    background: url("/img/sbp.png") no-repeat;
+    background: url("./../img/sbp.png") no-repeat;
     background-size: cover;
     margin-top: 60px;
     z-index: 2;
@@ -132,7 +132,7 @@ body {
     content: "";
     width: 190px;
     height: 190px;
-    background: url("/img/doodle.png") no-repeat -160px -120px;
+    background: url("./../img/doodle.png") no-repeat -160px -120px;
     right: 0;
     bottom: -250px;
 }
@@ -272,7 +272,7 @@ body {
     .sbp__img::after {
         width: 100px;
         height: 115px;
-        background: url("/img/doodle_mobile.png") no-repeat -100px -70px;
+        background: url("./../img/doodle_mobile.png") no-repeat -100px -70px;
         bottom: -60px;
     }
 
